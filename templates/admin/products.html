@@ -1,0 +1,751 @@
+{% extends './layouts/admin.html' %} {% block content %} {% load static %}
+
+<section class="section">
+  <div class="section-body">
+    <div class="row">
+      <div class="col-md-12" style="padding-bottom: 25px">
+        <form>
+          <input
+            class="form-control"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div class="card">
+          <div class="body">
+            <div id="mail-nav">
+              <ul class="" id="mail-folders">
+                <li style="padding-top: 10px">
+                  <h5 class="filter">Filters</h5>
+                </li>
+                <li>
+                  <label style="margin-bottom: 0px">Price</label>
+                  <input type="range" style="width: 100%" />
+                </li>
+                <div class="col-md-12 d-flex p-0">
+                  <div class="">
+                    <input type="text" class="form-control" />
+                    <span>QAR 6</span>
+                  </div>
+                  <label
+                    style="
+                      padding-left: 26px;
+                      padding-right: 25px;
+                      padding-top: 5px;
+                      font-weight: 700;
+                    "
+                    >to</label
+                  >
+                  <div class="">
+                    <input type="text" class="form-control" />
+                    <span>QAR 59.999</span>
+                  </div>
+                </div>
+                <li>
+                  <span
+                    class="categories"
+                    style="font-size: initial; font-weight: 700"
+                    >Categories</span
+                  >
+                </li>
+                <div
+                  class="col-md-12 p-0"
+                  style="height: 150px; overflow: auto"
+                >
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="defaultCheck1"
+                      />
+                      <label class="form-check-label" for="defaultCheck1">
+                        Checkbox 1
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="defaultCheck2"
+                      />
+                      <label class="form-check-label" for="defaultCheck2">
+                        Checkbox 2
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="defaultCheck3"
+                      />
+                      <label class="form-check-label" for="defaultCheck3">
+                        Checkbox 3
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="defaultCheck4"
+                      />
+                      <label class="form-check-label" for="defaultCheck4">
+                        Checkbox 4
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="defaultCheck5"
+                      />
+                      <label class="form-check-label" for="defaultCheck5">
+                        Checkbox 5
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="defaultCheck6"
+                      />
+                      <label class="form-check-label" for="defaultCheck6">
+                        Checkbox 6
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="defaultCheck7"
+                      />
+                      <label class="form-check-label" for="defaultCheck7">
+                        Checkbox 7
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="defaultCheck8"
+                      />
+                      <label class="form-check-label" for="defaultCheck8">
+                        Checkbox 8
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="defaultCheck9"
+                      />
+                      <label class="form-check-label" for="defaultCheck9">
+                        Checkbox 9
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <li style="padding-top: 15px">
+                  <span
+                    class="categories"
+                    style="font-size: initial; font-weight: 700"
+                    >Brands</span
+                  >
+                </li>
+                <div
+                  class="col-md-12 p-0"
+                  style="height: 150px; overflow: auto"
+                >
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="Check1"
+                      />
+                      <label class="form-check-label" for="Check1">
+                        Checkbox 1
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="Check2"
+                      />
+                      <label class="form-check-label" for="Check2">
+                        Checkbox 2
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="Check3"
+                      />
+                      <label class="form-check-label" for="Check3">
+                        Checkbox 3
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="Check4"
+                      />
+                      <label class="form-check-label" for="Check4">
+                        Checkbox 4
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="Check5"
+                      />
+                      <label class="form-check-label" for="Check5">
+                        Checkbox 5
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="Check6"
+                      />
+                      <label class="form-check-label" for="Check6">
+                        Checkbox 6
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="Check7"
+                      />
+                      <label class="form-check-label" for="Check7">
+                        Checkbox 7
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="Check8"
+                      />
+                      <label class="form-check-label" for="Check8">
+                        Checkbox 8
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="Check9"
+                      />
+                      <label class="form-check-label" for="Check9">
+                        Checkbox 9
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <li style="padding-top: 15px">
+                  <span
+                    class="categories"
+                    style="font-size: initial; font-weight: 700"
+                    >Test</span
+                  >
+                </li>
+                <div
+                  class="col-md-12 p-0"
+                  style="height: 150px; overflow: auto"
+                >
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="defaultCheck10"
+                      />
+                      <label class="form-check-label" for="defaultCheck10">
+                        Checkbox 1
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="defaultCheck20"
+                      />
+                      <label class="form-check-label" for="defaultCheck20">
+                        Checkbox 2
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="defaultCheck30"
+                      />
+                      <label class="form-check-label" for="defaultCheck30">
+                        Checkbox 3
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="defaultCheck40"
+                      />
+                      <label class="form-check-label" for="defaultCheck40">
+                        Checkbox 4
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="defaultCheck50"
+                      />
+                      <label class="form-check-label" for="defaultCheck50">
+                        Checkbox 5
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="defaultCheck60"
+                      />
+                      <label class="form-check-label" for="defaultCheck60">
+                        Checkbox 6
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="defaultCheck70"
+                      />
+                      <label class="form-check-label" for="defaultCheck70">
+                        Checkbox 7
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="defaultCheck80"
+                      />
+                      <label class="form-check-label" for="defaultCheck80">
+                        Checkbox 8
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="defaultCheck90"
+                      />
+                      <label class="form-check-label" for="defaultCheck90">
+                        Checkbox 9
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+        <div class="card">
+          <div class="boxs mail_listing">
+            <div class="inbox-center table-responsive">
+              <span
+                ><h5 style="padding-left: 15px; padding-top: 10px">
+                  All Products
+                </h5></span
+              >
+              <div class="row">
+                <div class="col d-flex" style="padding-left: 30px">
+                  <label style="padding-top: 10px">Sort</label>
+                  <div class="form-group" style="padding-left: 10px">
+                    <select class="form-control">
+                      <option>Trending</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col card-footer text-right">
+                  <nav class="d-inline-block">
+                    <ul class="pagination mb-0">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1"
+                          ><i class="fas fa-chevron-left"></i
+                        ></a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#"
+                          >1 <span class="sr-only">(current)</span></a
+                        >
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">4</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">...</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#"
+                          ><i class="fas fa-chevron-right"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 d-flex">
+                  <div class="col-md-3">
+                    <a href="#" style="text-decoration: none; color: #6c757d">
+                      <article class="article">
+                        <div class="article-header" style="height: 350px">
+                          <div
+                            class="article-image"
+                            data-background="https://rukminim1.flixcart.com/image/832/832/kuczmvk0/watch/l/y/q/1-ax1350-armani-exchange-men-original-imag7g5fb9gz4zwf.jpeg?q=70"
+                            style="
+                              background-image: url('https://rukminim1.flixcart.com/image/832/832/kuczmvk0/watch/l/y/q/1-ax1350-armani-exchange-men-original-imag7g5fb9gz4zwf.jpeg?q=70');
+                            "
+                          ></div>
+                        </div>
+                        <div
+                          class="details"
+                          style="padding-top: 10px; padding-left: 10px"
+                        >
+                          <div class="col">
+                            <p>A don't spirit gathered two under...</p>
+                          </div>
+                          <div class="col text-center" style="font-weight: 800">
+                            <span>QAR 149</span>
+                          </div>
+                        </div>
+                      </article>
+                    </a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="#" style="text-decoration: none; color: #6c757d">
+                      <article class="article">
+                        <div class="article-header" style="height: 350px">
+                          <div
+                            class="article-image"
+                            data-background="https://rukminim1.flixcart.com/image/832/832/kp2y2kw0/watch/k/k/d/ax2620-armani-exchange-original-imag3e4mxqdxfnzd.jpeg?q=70"
+                            style="
+                              background-image: url('https://rukminim1.flixcart.com/image/832/832/kp2y2kw0/watch/k/k/d/ax2620-armani-exchange-original-imag3e4mxqdxfnzd.jpeg?q=70');
+                            "
+                          ></div>
+                        </div>
+                        <div
+                          class="details"
+                          style="padding-top: 10px; padding-left: 10px"
+                        >
+                          <div class="col">
+                            <p>A don't spirit gathered two under...</p>
+                          </div>
+                          <div class="col text-center" style="font-weight: 800">
+                            <span>QAR 149</span>
+                          </div>
+                        </div>
+                      </article>
+                    </a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="#" style="text-decoration: none; color: #6c757d">
+                      <article class="article">
+                        <div class="article-header" style="height: 350px">
+                          <div
+                            class="article-image"
+                            data-background="https://rukminim1.flixcart.com/image/832/832/ksnjp8w0/watch/l/i/h/1-ax2400i-armani-exchange-men-original-imag669nex9fv5fh.jpeg?q=70"
+                            style="
+                              background-image: url('https://rukminim1.flixcart.com/image/832/832/ksnjp8w0/watch/l/i/h/1-ax2400i-armani-exchange-men-original-imag669nex9fv5fh.jpeg?q=70');
+                            "
+                          ></div>
+                        </div>
+                        <div
+                          class="details"
+                          style="padding-top: 10px; padding-left: 10px"
+                        >
+                          <div class="col">
+                            <p>A don't spirit gathered two under...</p>
+                          </div>
+                          <div class="col text-center" style="font-weight: 800">
+                            <span>QAR 149</span>
+                          </div>
+                        </div>
+                      </article>
+                    </a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="#" style="text-decoration: none; color: #6c757d">
+                      <article class="article">
+                        <div class="article-header" style="height: 350px">
+                          <div
+                            class="article-image"
+                            data-background="https://rukminim1.flixcart.com/image/832/832/kk76wsw0/watch/r/w/z/ax2702-armani-exchange-original-imafzhhhxcs6kqen.jpeg?q=70"
+                            style="
+                              background-image: url('https://rukminim1.flixcart.com/image/832/832/kk76wsw0/watch/r/w/z/ax2702-armani-exchange-original-imafzhhhxcs6kqen.jpeg?q=70');
+                            "
+                          ></div>
+                        </div>
+                        <div
+                          class="details"
+                          style="padding-top: 10px; padding-left: 10px"
+                        >
+                          <div class="col">
+                            <p>A don't spirit gathered two under...</p>
+                          </div>
+                          <div class="col text-center" style="font-weight: 800">
+                            <span>QAR 149</span>
+                          </div>
+                        </div>
+                      </article>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 d-flex">
+                  <div class="col-md-3">
+                    <a href="#" style="text-decoration: none; color: #6c757d">
+                      <article class="article">
+                        <div class="article-header" style="height: 350px">
+                          <div
+                            class="article-image"
+                            data-background="https://rukminim1.flixcart.com/image/832/832/kuczmvk0/watch/l/y/q/1-ax1350-armani-exchange-men-original-imag7g5fb9gz4zwf.jpeg?q=70"
+                            style="
+                              background-image: url('https://rukminim1.flixcart.com/image/832/832/kuczmvk0/watch/l/y/q/1-ax1350-armani-exchange-men-original-imag7g5fb9gz4zwf.jpeg?q=70');
+                            "
+                          ></div>
+                        </div>
+                        <div
+                          class="details"
+                          style="padding-top: 10px; padding-left: 10px"
+                        >
+                          <div class="col">
+                            <p>A don't spirit gathered two under...</p>
+                          </div>
+                          <div class="col text-center" style="font-weight: 800">
+                            <span>QAR 149</span>
+                          </div>
+                        </div>
+                      </article>
+                    </a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="#" style="text-decoration: none; color: #6c757d">
+                      <article class="article">
+                        <div class="article-header" style="height: 350px">
+                          <div
+                            class="article-image"
+                            data-background="https://rukminim1.flixcart.com/image/832/832/kp2y2kw0/watch/k/k/d/ax2620-armani-exchange-original-imag3e4mxqdxfnzd.jpeg?q=70"
+                            style="
+                              background-image: url('https://rukminim1.flixcart.com/image/832/832/kp2y2kw0/watch/k/k/d/ax2620-armani-exchange-original-imag3e4mxqdxfnzd.jpeg?q=70');
+                            "
+                          ></div>
+                        </div>
+                        <div
+                          class="details"
+                          style="padding-top: 10px; padding-left: 10px"
+                        >
+                          <div class="col">
+                            <p>A don't spirit gathered two under...</p>
+                          </div>
+                          <div class="col text-center" style="font-weight: 800">
+                            <span>QAR 149</span>
+                          </div>
+                        </div>
+                      </article>
+                    </a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="#" style="text-decoration: none; color: #6c757d">
+                      <article class="article">
+                        <div class="article-header" style="height: 350px">
+                          <div
+                            class="article-image"
+                            data-background="https://rukminim1.flixcart.com/image/832/832/ksnjp8w0/watch/l/i/h/1-ax2400i-armani-exchange-men-original-imag669nex9fv5fh.jpeg?q=70"
+                            style="
+                              background-image: url('https://rukminim1.flixcart.com/image/832/832/ksnjp8w0/watch/l/i/h/1-ax2400i-armani-exchange-men-original-imag669nex9fv5fh.jpeg?q=70');
+                            "
+                          ></div>
+                        </div>
+                        <div
+                          class="details"
+                          style="padding-top: 10px; padding-left: 10px"
+                        >
+                          <div class="col">
+                            <p>A don't spirit gathered two under...</p>
+                          </div>
+                          <div class="col text-center" style="font-weight: 800">
+                            <span>QAR 149</span>
+                          </div>
+                        </div>
+                      </article>
+                    </a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="#" style="text-decoration: none; color: #6c757d">
+                      <article class="article">
+                        <div class="article-header" style="height: 350px">
+                          <div
+                            class="article-image"
+                            data-background="https://rukminim1.flixcart.com/image/832/832/kk76wsw0/watch/r/w/z/ax2702-armani-exchange-original-imafzhhhxcs6kqen.jpeg?q=70"
+                            style="
+                              background-image: url('https://rukminim1.flixcart.com/image/832/832/kk76wsw0/watch/r/w/z/ax2702-armani-exchange-original-imafzhhhxcs6kqen.jpeg?q=70');
+                            "
+                          ></div>
+                        </div>
+                        <div
+                          class="details"
+                          style="padding-top: 10px; padding-left: 10px"
+                        >
+                          <div class="col">
+                            <p>A don't spirit gathered two under...</p>
+                          </div>
+                          <div class="col text-center" style="font-weight: 800">
+                            <span>QAR 149</span>
+                          </div>
+                        </div>
+                      </article>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 d-flex">
+                  <div class="col-md-3">
+                    <a href="#" style="text-decoration: none; color: #6c757d">
+                      <article class="article">
+                        <div class="article-header" style="height: 350px">
+                          <div
+                            class="article-image"
+                            data-background="https://rukminim1.flixcart.com/image/832/832/kuczmvk0/watch/l/y/q/1-ax1350-armani-exchange-men-original-imag7g5fb9gz4zwf.jpeg?q=70"
+                            style="
+                              background-image: url('https://rukminim1.flixcart.com/image/832/832/kuczmvk0/watch/l/y/q/1-ax1350-armani-exchange-men-original-imag7g5fb9gz4zwf.jpeg?q=70');
+                            "
+                          ></div>
+                        </div>
+                        <div
+                          class="details"
+                          style="padding-top: 10px; padding-left: 10px"
+                        >
+                          <div class="col">
+                            <p>A don't spirit gathered two under...</p>
+                          </div>
+                          <div class="col text-center" style="font-weight: 800">
+                            <span>QAR 149</span>
+                          </div>
+                        </div>
+                      </article>
+                    </a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="#" style="text-decoration: none; color: #6c757d">
+                      <article class="article">
+                        <div class="article-header" style="height: 350px">
+                          <div
+                            class="article-image"
+                            data-background="https://rukminim1.flixcart.com/image/832/832/kp2y2kw0/watch/k/k/d/ax2620-armani-exchange-original-imag3e4mxqdxfnzd.jpeg?q=70"
+                            style="
+                              background-image: url('https://rukminim1.flixcart.com/image/832/832/kp2y2kw0/watch/k/k/d/ax2620-armani-exchange-original-imag3e4mxqdxfnzd.jpeg?q=70');
+                            "
+                          ></div>
+                        </div>
+                        <div
+                          class="details"
+                          style="padding-top: 10px; padding-left: 10px"
+                        >
+                          <div class="col">
+                            <p>A don't spirit gathered two under...</p>
+                          </div>
+                          <div class="col text-center" style="font-weight: 800">
+                            <span>QAR 149</span>
+                          </div>
+                        </div>
+                      </article>
+                    </a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="#" style="text-decoration: none; color: #6c757d">
+                      <article class="article">
+                        <div class="article-header" style="height: 350px">
+                          <div
+                            class="article-image"
+                            data-background="https://rukminim1.flixcart.com/image/832/832/ksnjp8w0/watch/l/i/h/1-ax2400i-armani-exchange-men-original-imag669nex9fv5fh.jpeg?q=70"
+                            style="
+                              background-image: url('https://rukminim1.flixcart.com/image/832/832/ksnjp8w0/watch/l/i/h/1-ax2400i-armani-exchange-men-original-imag669nex9fv5fh.jpeg?q=70');
+                            "
+                          ></div>
+                        </div>
+                        <div
+                          class="details"
+                          style="padding-top: 10px; padding-left: 10px"
+                        >
+                          <div class="col">
+                            <p>A don't spirit gathered two under...</p>
+                          </div>
+                          <div class="col text-center" style="font-weight: 800">
+                            <span>QAR 149</span>
+                          </div>
+                        </div>
+                      </article>
+                    </a>
+                  </div>
+                  <div class="col-md-3">
+                    <a href="#" style="text-decoration: none; color: #6c757d">
+                      <article class="article">
+                        <div class="article-header" style="height: 350px">
+                          <div
+                            class="article-image"
+                            data-background="https://rukminim1.flixcart.com/image/832/832/kk76wsw0/watch/r/w/z/ax2702-armani-exchange-original-imafzhhhxcs6kqen.jpeg?q=70"
+                            style="
+                              background-image: url('https://rukminim1.flixcart.com/image/832/832/kk76wsw0/watch/r/w/z/ax2702-armani-exchange-original-imafzhhhxcs6kqen.jpeg?q=70');
+                            "
+                          ></div>
+                        </div>
+                        <div
+                          class="details"
+                          style="padding-top: 10px; padding-left: 10px"
+                        >
+                          <div class="col">
+                            <p>A don't spirit gathered two under...</p>
+                          </div>
+                          <div class="col text-center" style="font-weight: 800">
+                            <span>QAR 149</span>
+                          </div>
+                        </div>
+                      </article>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
